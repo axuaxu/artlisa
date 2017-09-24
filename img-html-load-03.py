@@ -68,7 +68,7 @@ def ranfile(parr,outhtml,thtml):
     #read  template file
     i = 0
     plen = len(parr)
-    instr = getInstr(0,19,parr)
+    instr = getInstr(0,30,parr)
     
 
     
@@ -79,7 +79,7 @@ def ranfile(parr,outhtml,thtml):
     sgg2 = "items = ['"
     tlen2 =len(sgg2)
     mark2 = outstr.find(sgg2)+tlen2
-    instr2 = getInstr(20,39,parr)
+    instr2 = getInstr(30,30,parr)
 
 
     outstr = outstr[:mark2]+instr2+outstr[mark2:]
@@ -110,7 +110,7 @@ random.shuffle(parr)
 now =  datetime.datetime.now()
 timestr = str(now).replace(' ','-').replace(':','-')
 #print now
-listf = "p1.html"
+listf = "z1.html"
 print timestr[0:19]
 thtml = "gg-35.html"
 print thtml,listf

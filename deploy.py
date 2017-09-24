@@ -62,8 +62,8 @@ def upload_fileorg(bucket_name,filePath):
         return False   
     return True
 
-#[zipFile(x,stagingDir + x) if isZipF
-ile(x) else copyFile(x,stagingDir + x) for x in getFiles(sourceDir)]
+#
+[zipFile(x,stagingDir + x) if isZipFile(x) else copyFile(x,stagingDir + x) for x in getFiles(sourceDir)]
 #pool = ThreadPool(processes=40)
 #pool.map(lambda x : upload_file(bucketName,x), getFiles(stagingDir))
 #lambda x : upload_file(bucketName,x), getFiles(stagingDir)
