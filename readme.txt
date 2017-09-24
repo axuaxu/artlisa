@@ -37,6 +37,9 @@ pic_down.py  download image  param:[input: xxx_url.txt,  download dir: \pics, \v
 build web site:
 img-tree-02.py   list image files    param: [dir, output file: img-?.csv]
 img-tree-03.py   list image files    param: [dir, output file: allimages?.csv]
+img-tree-dup-01.py  check and delete duplicated images files 
+                       params:[duplicate to del: all-del-images.csv]
+
 img-html-100.py      write unitegallery html files  
                      param:[input file: img-?.csv, output file: img-html-?.html template:img-html-100-?.html]
 img-html-gg-05.py   write gammagallery htmls
@@ -62,6 +65,9 @@ img-html-load.py       listing random pics  in img html with infinite load
 aws
 deploy.py              upload files to s3  
                        params:[dir: dist, bucketname:artlisastage for zip:out]
+
+// web server
+python -m SimpleHTTPServer 2000
 
 //links
 http://www.lambdatwist.com/s3-hosting-guide/   upload to s3
