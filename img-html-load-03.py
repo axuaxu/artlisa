@@ -110,7 +110,7 @@ random.shuffle(parr)
 now =  datetime.datetime.now()
 timestr = str(now).replace(' ','-').replace(':','-')
 #print now
-listf = ".\ib1.html"
+listf = "p1.html"
 print timestr[0:19]
 thtml = "gg-35.html"
 print thtml,listf
