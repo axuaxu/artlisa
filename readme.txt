@@ -10,11 +10,12 @@ auto twit setup
 
 auto twit setup axu:
 1. upload images to S3 photo?
-2. SSH to EC2, run list_photo.py
+2. SSH to EC2, list files in photo?, edit and run list_photo.py, 
+                                     param[output: photo?.txt]
 3. backup dynamoDB photo
-4. run list_photo.py
-
-
+4. insert files to dbtable photo,  edit and run list_dyn_photo.py
+                                    param[input: photo?.txt]
+ 
 retwit:
 local: retwi-01.py
 
