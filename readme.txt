@@ -66,18 +66,25 @@ aws
 deploy.py              upload files to s3  
                        params:[dir: dist, bucketname:artlisastage for zip:out]
 
+
+//layout
+
+fluid                 bootstrap 3
 // web server
 python -m SimpleHTTPServer 2000
 
 
-//bootstrap
+//bootstrap //layout
 https://startbootstrap.com/template-overviews/clean-blog/
-
+https://tutorialzine.com/2017/02/freebie-4-bootstrap-galleries
 
 //links
 aws  https://cyberduck.io/?l=en
 http://www.lambdatwist.com/s3-hosting-guide/   upload to s3
 https://linuxacademy.com/howtoguides/posts/show/topic/14209-automating-aws-with-python-and-boto3   aws python boto3
+
+
+
 
 
 
