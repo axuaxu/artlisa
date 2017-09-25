@@ -1,9 +1,10 @@
 auto twit setup
 
 1.check last update, using painter name in dynamodb imglist, upload image files to S3, images?
-2.SSH to EC2, twipro\list_images1.py  param: [dir:images?, file:images?.txt]
+2.SSH to EC2, twipro\list_images1.py, edit file change dir
+                   param: [dir:images?, file:images?.txt]
 3. backup dynamoDB, export imglist items to csv file
-4. run list_dyn2.py, param: [images?.txt,]
+4. edit file, change input file name, run list_dyn2.py, param: [images?.txt,]
 5. twit: local
     lambda: lamb_img.py
 
@@ -18,7 +19,12 @@ retwit:
 local: retwi-01.py
 
 axu twit:
-img_down_gre.py download from twit acc
+pic_list.py    build url list for twi pics 
+               param:[input: twi_list.txt acc list, count: 200, maxid:  output: twi_url.txt url list]
+pic_down.py    download pic in twi_url.txt
+               params:[input: twi_url.txt, pic dir, video dir]
+
+img_down_gre.py download from url links  params:[input: twidown_?.txt]
 img_mongo_gre.py  inser
 lt to mongo DB
 img_list_axu.py  twit
@@ -60,16 +66,26 @@ img-html-random-01.py   listing random pics
 img-html-load.py       listing random pics  in img html with infinite load
                        param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template gg-?.html]
+img-html-load-fluid.py  isting random pics  in img html with infinite load
+                        bootstrap fluid layout
+                        param:[input file: allimages?.csv, output file:img-html-gg-?.html
+                                template b-?.html]
 
-
+img-html-load-sal.py  listing random pics  in img html with salvattore
+                        bootstrap fluid layout
+                        param:[input file: allimages?.csv, output file:img-html-gg-?.html
+                                template sv-?.html]
 aws
 deploy.py              upload files to s3  
                        params:[dir: dist, bucketname:artlisastage for zip:out]
 
 
 //layout
-
-fluid                 bootstrap 3
+http://salvattore.com/
+fluid                 bootstrap 
+css masonry
+http://w3bits.com/css-masonry/
+https://medium.com/@_jh3y/how-to-the-masonry-layout-56f0fe0b19df
 // web server
 python -m SimpleHTTPServer 2000
 
