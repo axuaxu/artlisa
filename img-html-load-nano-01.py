@@ -8,6 +8,24 @@ import random
 
 #print('first check')
 #rootDir = '.\images'
+def getItem(painter,desc,albumid):
+    imgitem  = ''
+    fi = ".\\csv-plist\\"+painter+".csv"
+    fimg = open(fi,'r')
+    i = albumid*100
+    for item in fimg:
+      i = i + 1
+      #print item
+      if len(item) > 5:
+         item = item.replace('\n','')
+         item = item.replace('.\\images\\','')
+         item = item.replace('\\','/')
+         #print item
+         imgitem = imgitem+'<a href="'+item+'" data-ngid="'+str(i)+'" data-ngalbumid="'\
+                   +str(albumid)+'" data-ngthumb="'+item+'">'\
+                   +desc+'</a>\n'
+    
+    return imgitem
 def getInstr(inum,iend,parr):
     i = inum
     instr = ""
@@ -39,11 +57,13 @@ def getInstr(inum,iend,parr):
               lstr = narr[2]+'/'+narr[3]
               lstr = lstr.replace('\n','')
          #print imgsrc
-              imgstr = '<a href=""  data-ngkind="album" data-ngid="1" data-ngthumb="'\
-                 + lstr +'">'+painter+'</a>'
-               
+              
+              imgstr = '\n<a href=""  data-ngkind="album" data-ngid="'+str(i)+'" data-ngthumb="'\
+                 + lstr +'">'+painter+'</a>\n'
               #print imgstr
               instr = instr+imgstr
+              imgitem = getItem(narr[2],desc,i)
+              instr = instr+imgitem
     return instr
 
 
@@ -61,7 +81,7 @@ def ranfile(parr,outhtml,thtml):
     #read  template file
     i = 0
     plen = len(parr)
-    instr = getInstr(0,30,parr)
+    instr = getInstr(0,plen,parr)
     
 
     
@@ -84,12 +104,12 @@ for painter in fp:
 #random.shuffle(parr)
 #parr = sorted(parr)
 #print parr
-now =  datetime.datetime.now()
-timestr = str(now).replace(' ','-').replace(':','-')
+#now =  datetime.datetime.now()
+#timestr = str(now).replace(' ','-').replace(':','-')
 #print now
-listf = "al-1.html"
-print timestr[0:19]
-thtml = "nano-1.html"
+listf = "al-01.html"
+#print timestr[0:19]
+thtml = "nano-01.html"
 print thtml,listf
 ranfile(parr,listf,thtml)
 

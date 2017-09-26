@@ -46,6 +46,9 @@ img-tree-02.py   list image files    param: [dir, output file: img-?.csv]
 img-tree-03.py   list image files    param: [dir, output file: all-images?.csv]
 img-tree-dup-02.py  check and delete duplicated images files 
                        params:[duplicate to del: all-del-images.csv]
+list-img-random.py list random painting of a painter
+                        params:[input all-painters.csv, csv-plist\painter-name.csv
+                                output: all-img-random.csv]
 
 img-html-100.py      write unitegallery html files  
                      param:[input file: img-?.csv, output file: img-html-?.html template:img-html-100-?.html]
@@ -79,9 +82,9 @@ img-html-load-sal.py  listing random pics  in img html with salvattore
                         param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template sv-?.html]
 
-img-html-load-sal.py  listing random pics  in img html with nano gallery
+img-html-load-nano.py  listing random pics  in img html with nano gallery
                         bootstrap fluid layout
-                        param:[input file: allimages?.csv, output file:al-?.html
+                        param:[input file: all-img-random.csv, output file:al-?.html
                                 template nano-?.html] 
 //aws
 deploy.py              upload files to s3  
@@ -96,7 +99,7 @@ dir-painting.py        write painter's painting list
                         params:[input all-painters.csv, output csv-plist\painter-name.csv]
 list-img-random.py list random painting of a painter
                         params:[input all-painters.csv, csv-plist\painter-name.csv
-                                output: all-img-random.py]
+                                output: all-img-random.csv]
 
 //layout
 z1.html               gamma gallery
