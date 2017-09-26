@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Gallery made with nanogallery2</h1>
+
+    <div data-nanogallery2='{
+        "itemsBaseURL": "http://localhost:2000/images/emily-carr/",
+        "thumbnailWidth": "200",
+        "thumbnailAlignment": "center",
+        "galleryFilterTags": "description",
+        "thumbnailLabel": {
+          "position": "onBottom"
+        },
+        "thumbnailHoverEffect2": "slideUp|scale120|borderLighter",
+        "galleryDisplayMode": "pagination",
+        "thumbnailAlignment": "center",
+        "thumbnailLevelUp": true
+      }'>
+      <a href="indian-village-alert-bay-1912.jpg" data-ngthumb="indian-village-alert-bay-1912.jpg" data-ngdesc="@ber">@Berlin 1</a>
+      <a href="arbutus-tree-1922.jpg" data-ngthumb="arbutus-tree-1922.jpg" data-ngdesc="@bcd">Berlin @2</a>
+      <a href="totem-walk-at-sitka-1907.jpg" data-ngthumb="totem-walk-at-sitka-1907.jpg" data-ngdesc="@wer">Berlin @3</a>
+
+    </div>
+    
+  </body>
+</html>

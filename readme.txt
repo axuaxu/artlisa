@@ -1,4 +1,4 @@
-auto twit setup
+//auto twit setup
 
 1.check last update, using painter name in dynamodb imglist, upload image files to S3, images?
 2.SSH to EC2, twipro\list_images1.py, edit file change dir
@@ -8,7 +8,7 @@ auto twit setup
 5. twit: local
     lambda: lamb_img.py
 
-auto twit setup axu:
+//auto twit setup axu:
 1. upload images to S3 photo?
 2. SSH to EC2, list files in photo?, edit and run list_photo.py, 
                                      param[output: photo?.txt]
@@ -16,10 +16,10 @@ auto twit setup axu:
 4. insert files to dbtable photo,  edit and run list_dyn_photo.py
                                     param[input: photo?.txt]
  
-retwit:
+//retwit:
 local: retwi-01.py
 
-axu twit:
+//axu twit:
 pic_list.py    build url list for twi pics 
                param:[input: twi_list.txt acc list, count: 200, maxid:  output: twi_url.txt url list]
 pic_down.py    download pic in twi_url.txt
@@ -32,16 +32,16 @@ img_list_axu.py  twit
 lamb_img_list_axu.py  lambda twit
 
 
-list file names in directory:
+//list file names in directory:
 dir-tree-02.py   param: [rootdir: .\images, output file: flist?.txt]
 
  
-download images from twit:
+//download images from twit:
 pic_list.py  get image url   param:[input twit accs: xxx_list.txt, output: xxx_url.txt]
 pic_down.py  download image  param:[input: xxx_url.txt,  download dir: \pics, \videos]
 
 
-build web site:
+//build web site:
 img-tree-02.py   list image files    param: [dir, output file: img-?.csv]
 img-tree-03.py   list image files    param: [dir, output file: allimages?.csv]
 img-tree-dup-01.py  check and delete duplicated images files 
@@ -76,14 +76,20 @@ img-html-load-sal.py  listing random pics  in img html with salvattore
                         bootstrap fluid layout
                         param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template sv-?.html]
-aws
+//aws
 deploy.py              upload files to s3  
                        params:[dir: dist, bucketname:artlisastage for zip:out]
 
 
-layout
-testjscroll.html
+//layout
+z1.html               gamma gallery
+oa1.html              bootstrap fluid.html
+sa1.html              salvattore masonry
+testjscroll.html      jscroll
 
+
+//jquery
+https://nanogallery2.nanostudio.org   nano gallery
 //layout
 http://jscroll.com/
 http://www.developphp.com/video/JavaScript/Scroll-Load-Dynamic-Content-When-User-Reach-Bottom-Ajax
