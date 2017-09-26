@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Gallery made with nanogallery2</h1>
+
+    <div data-nanogallery2='{
+        "itemsBaseURL": "http://localhost:2000/images/emily-carr/",
+        "thumbnailWidth": "200",
+        "thumbnailAlignment": "center",
+        "galleryFilterTags": "description",
+        "thumbnailLabel": {
+          "position": "onBottom"
+        },
+
+        "thumbnailHoverEffect2": "slideUp|scale120|borderLighter",
+        "galleryDisplayMode": "pagination",
+        "thumbnailAlignment": "center",
+        "thumbnailLevelUp": true
+      }'>
+    
+  <!-- first album -->
+  <a href=""           data-ngkind="album" data-ngid="1"                     data-ngthumb="brittany-landscape-1911.jpg">Album A</a>
+  <a href="brittany-landscape-1911.jpg"                     data-ngid="10" data-ngalbumid="1" data-ngthumb="totem-walk-at-sitka-1907.jpg">Image 1 / album A</a>
+  <a href="arbutus-tree-1922.jpg"                     data-ngid="11" data-ngalbumid="1" data-ngthumb="arbutus-tree-1922.jpg">Image 2 / album A</a>
+
+  <!-- second album -->
+  <a href=""          data-ngkind="album" data-ngid="2"                     data-ngthumb="skidegate-1928.jpg">Album B</a>
+  <a href="thunder-bird-campbell-river-1929.jpg"                     data-ngid="20" data-ngalbumid="2" data-ngthumb="totem-walk-at-sitka-1907.jpg"   >Image1</a>
+  <a href="skidegate-1928.jpg"                     data-ngid="21" data-ngalbumid="2" data-ngthumb="skidegate-1928.jpg"   >Image2</a>
+  <a href="indian-church-1929.jpg"                     data-ngid="22" data-ngalbumid="2" data-ngthumb="indian-church-1929.jpg"   >Image3</a>
+</div>    
+
+    </div>
+    
+  </body>
+</html>

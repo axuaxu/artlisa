@@ -86,6 +86,7 @@ z1.html               gamma gallery
 oa1.html              bootstrap fluid.html
 sa1.html              salvattore masonry
 testjscroll.html      jscroll
+testnano-01.html        nano gallery
 
 
 //jquery
