@@ -28,14 +28,14 @@ def flist():
 
  
 ft,fd = flist()  
-with open('.\\csv\\allimages.csv', 'wb') as f:
+with open('.\\csv\\all-images.csv', 'wb') as f:
       f.write(ft)
 with open('.\\csv\\all-dup-images.csv', 'wb') as f:
       f.write(fd)
 
 
 fin = open('.\\csv\\all-dup-images.csv', 'r')
-fall = open('.\\csv\\allimages.csv', 'r')
+fall = open('.\\csv\\all-images.csv', 'r')
 allarr=[]
 fo = ''
 ft = ''

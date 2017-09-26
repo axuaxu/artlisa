@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+
+  </head>
+  <body>
+<div data-nanogallery2='{
+        "itemsBaseURL": "http://localhost:2000/images/emily-carr/",
+        "thumbnailWidth": "200",
+        "thumbnailAlignment": "center",
+        "galleryFilterTags": "title",
+        "thumbnailLabel": {
+          "position": "onBottom"
+        },
+
+        "thumbnailHoverEffect2": "slideUp|scale120|borderLighter",
+        "galleryDisplayMode": "pagination",
+        "thumbnailAlignment": "center",
+        "thumbnailLevelUp": true
+      }'>
+  
+
+<script>
+$(document).ready(function () {
+  $("#my_nanogallery2 ").nanoGallery({
+    items: [
+      // album 1
+      { src: 'brittany-landscape-1911.jpg',                         title: 'album A',  ID: 1,  kind:'album' },
+      { src: 'totem-walk-at-sitka-1907.jpg', srct: 'totem-walk-at-sitka-1907.jpg', title: 'image A1', ID: 10, albumID: 1 },
+      { src: 'arbutus-tree-1922.jpg', srct: 'arbutus-tree-1922.jpg', title: 'image A2', ID: 11, albumID: 1 },
+      { src: 'skidegate-1928.jpg', srct: 'skidegate-1928.jpg', title: 'image A3', ID: 12, albumID: 1 },
+      
+      // album 2
+      { src: 'thunder-bird-campbell-river-1929.jpg',                         title: 'album B',  ID: 2,  kind:'album' },
+      { src: 'thunder-bird-campbell-river-1929.jpg', srct: 'thunder-bird-campbell-river-1929.jpg', title: 'image B1', ID: 20, albumID: 2 },
+      { src: 'indian-church-1929.jpg', srct: 'indian-church-1929.jpg', title: 'image B2', ID: 21, albumID: 2 },
+      { src: 'thunder-bird-campbell-river-1929.jpg', srct: 'thunder-bird-campbell-river-1929.jpg', title: 'image B3', ID: 22, albumID: 2 }
+    ]
+  };
+})
+</script>
+    </div>  
+  </body>
+</html>

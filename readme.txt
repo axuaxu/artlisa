@@ -43,8 +43,8 @@ pic_down.py  download image  param:[input: xxx_url.txt,  download dir: \pics, \v
 
 //build web site:
 img-tree-02.py   list image files    param: [dir, output file: img-?.csv]
-img-tree-03.py   list image files    param: [dir, output file: allimages?.csv]
-img-tree-dup-01.py  check and delete duplicated images files 
+img-tree-03.py   list image files    param: [dir, output file: all-images?.csv]
+img-tree-dup-02.py  check and delete duplicated images files 
                        params:[duplicate to del: all-del-images.csv]
 
 img-html-100.py      write unitegallery html files  
@@ -53,15 +53,17 @@ img-html-gg-05.py   write gammagallery htmls
                   param:[input file: img-?.csv, output file:img-html-gg-?.html
                    template gg-?.html]
 dir-img.py       param: [rootdir: .\images, output file: flist?.txt]
-list_painter_html.py   list painters params:[input:flist?.csv, ouput: painterlist?.html]
-list_painter_csv.py    list painters params:[input:flist?.csv, ouput: painterlist?.csv]
-dir-painting.py        writer painter's painting list 
-                       params:[input painterlist?.csv, output painter-name.csv]
+list_painter_html.py   list painters params:[input:flist?.csv, ouput: all-painters.html]
+list_painter_csv.py    sorted list painters params:[input:flist?.csv, ouput: all-painters.csv]
+
+dir-painting.py        write painter's painting list 
+                       params:[input all-painters.csv, output csv-plist\painter-name.csv]
+
 img-html-painter-list-00.py    write gammagallery htmls for painters
                         params:[input: painterlist?.csv, output: paintername-?.html]
 
 img-html-random-01.py   listing random pics 
-                     param:[input file: img-?.csv, output file:img-html-gg-?.html
+                         param:[input file: img-?.csv, output file:img-html-gg-?.html
                                 template gg-?.html]
 
 img-html-load.py       listing random pics  in img html with infinite load
@@ -76,18 +78,29 @@ img-html-load-sal.py  listing random pics  in img html with salvattore
                         bootstrap fluid layout
                         param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template sv-?.html]
+
+img-html-load-sal.py  listing random pics  in img html with nano gallery
+                        bootstrap fluid layout
+                        param:[input file: allimages?.csv, output file:al-?.html
+                                template nano-?.html] 
 //aws
 deploy.py              upload files to s3  
                        params:[dir: dist, bucketname:artlisastage for zip:out]
 
+//steps
 
+img-tree-dup-02.py  check and delete duplicated images files 
+                       params:[duplicate to del: all-del-images.csv]
+dir-painting.py        write painter's painting list 
+                       params:[input all-painters.csv, output csv-plist\painter-name.csv]
+                       
 //layout
 z1.html               gamma gallery
 oa1.html              bootstrap fluid.html
 sa1.html              salvattore masonry
 testjscroll.html      jscroll
-testnano-01.html        nano gallery
-
+testnano-02.html        nano gallery album
+artnano2.html          artlisa.org
 
 //jquery
 https://nanogallery2.nanostudio.org   nano gallery
