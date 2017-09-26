@@ -91,9 +91,10 @@ deploy.py              upload files to s3
 
 img-tree-dup-02.py  check and delete duplicated images files 
                        params:[duplicate to del: all-del-images.csv]
+list_painter_csv.py    sorted list painters params:[input:flist?.csv, ouput: all-painters.csv]
 dir-painting.py        write painter's painting list 
                        params:[input all-painters.csv, output csv-plist\painter-name.csv]
-                       
+
 //layout
 z1.html               gamma gallery
 oa1.html              bootstrap fluid.html
