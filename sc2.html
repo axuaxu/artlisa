@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Salvattore content test</title>
+        <!-- Include some stylesheet containing your configuration -->
+        <link rel="stylesheet" href="css/salvattore.css">
+
+        <!-- For demo only -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sv-styles.css">
+        <script src="js/infinite-scroll.pkgd.min.js"></script>
+    </head>
+    <body>
+        <h1>Salvattore <small>Example</small></h1>
+
+        <!-- include 'data-columns' at the container -->
+        <div id="timeline" data-columns >  <div class="item" class="column size-1of4">                <img src="images/istvan-ilosvai-varga/flowerpots-on-the-windowsill-1931.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/august-macke/street-with-church-in-kandern.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/chang-dai-chien/unknown-title-3.jpg!HalfHD.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/street-winter-sunlight-and-snow.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/auguste-herbin/park-in-paris-1904.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/francisc-sirato/houses-on-the-shore-of-lake-cernica.jpg!HalfHD.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/gustav-klimt/death-and-life-1916.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/by-the-water-1881.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/young-girl-with-a-parasol-aline-nunès-1883.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/the-daughters-of-catulle-mendes-1888.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/corneliu-michailescu/still-life-with-grapes-and-carafe.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/paul-cezanne/self-portrait-1882.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/mary-fedden/the-teapot-1984.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/o-louis-guglielmi/town-square-1939.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/vincent-van-gogh/landscape-with-house-and-ploughman-1889(2).jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/vincent-van-gogh/sunflowers-1888.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/georges-seurat/the-circus-1891.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/maurice-prendergast/charles-street-boston.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/mary-cassatt/the-visit-1891.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/two-cowherds-by-the-river.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/qi-baishi/wisteria-flowers-and-meyhua-1951.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/ion-pacea/lalele.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/portrait-of-victor-chocquet-1875.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/eug-ne-grasset/la-belle-jardiniere-march-1896.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pablo-picasso/summer-landscape-1902.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/corneliu-michailescu/venice.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/flood-white-effect-eragny-1893.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/claude-monet/woodbearers-in-fontainebleau-forest.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/torii-kotondo/a-lady.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/wassily-kandinsky/couple-riding-1906.jpg!HalfHD.jpg"></div>
+            <div class="item" class="column size-1of3">
+                <img src="images/maurice-prendergast/afternoon-pincian-hill.jpg" alt="">
+            </div>
+           <div class="scroller-status">
+  <div class="infinite-scroll-request loader-ellips">
+    ...
+  </div>
+  <p class="infinite-scroll-last">End of content</p>
+  <p class="infinite-scroll-error">No more pages to load</p>
+</div>
+
+<!-- pagination has path -->
+<p class="pagination">
+  <a class="pagination__next" href="sc3.html">Next page</a>
+</p>
+<script type="text/javascript">
+   var elem = document.querySelector('.timeline');
+var infScroll = new InfiniteScroll( elem, {
+  // options
+  path: '.pagination__next',
+  append: '.item',
+  history: false,
+});
+
+// element argument can be a selector string
+//   for an individual element
+
+</script>
+           
+        </div>
+        <div class="footer">
+          <a href="http://salvattore.com/" target="_blank">Website</a> |
+          <a href="http://twitter.com/salvattorejs" target="_blank">Twitter</a> |
+          Made by <a href="http://rolandomurillo.com/" target="_blank">Rolando Murillo</a>
+          and <a href="http://github.com/ppold" target="_blank">Giorgio Leveroni.</a>
+        </div>
+
+        <!-- The script must be included at the bottom of the body to work -->
+        <script src="js/salvattore.min.js"></script>
+    </body>
+</html>

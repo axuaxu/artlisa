@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Salvattore content test</title>
+        <!-- Include some stylesheet containing your configuration -->
+        <link rel="stylesheet" href="css/salvattore.css">
+
+        <!-- For demo only -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sv-styles.css">
+    </head>
+    <body>
+        <h1>Salvattore <small>Example</small></h1>
+        <div>
+        <section>
+                <h1>Dynamic content</h1>
+                <p>Salvattore has two functions you can work with: <code class="highlight">appendElements</code> and <code class="highlight">prependElements</code>. These two functions have the same arguments: the <code class="highlight">grid</code> and the <code class="highlight">elements</code> you want added to it.</p>
+<!-- Code -->
+                <pre data-lang="JavaScript">
+var grid = document.querySelector('#grid');
+var item = document.createElement('article');
+
+salvattore.<span class="highlight">appendElements</span>(<span class="highlight">grid</span>, <span class="highlight">[item]</span>);
+item.outerHTML = 'I’ve been appended!';</pre>
+<!-- /Code -->
+</section></div>
+
+                <p>Here's a demonstration of this principle applied to a working grid, you can check the <a href="https://gist.github.com/rnmp/bf6c5d8db9487862aba1">code used</a> for it:</p>
+
+                <section class="test-grid clear" data-columns>
+                    <article class="item">
+                        <h1 class="">1</h1>
+                        <p>Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura ché la diritta via era smarrita.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">2</h1>
+                        <p>Ahi quanto a dir qual era è cosa dura esta selva selvaggia e aspra e forte che nel pensier rinova la paura!</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">3</h1>
+                        <p>Tant'è amara che poco è più morte; ma per trattar del ben ch'i' vi trovai, dirò de l'altre cose ch'i' v'ho scorte.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">4</h1>
+                        <p>Io non so ben ridir com'i' v'intrai, tant'era pien di sonno a quel punto che la verace via abbandonai.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">5</h1>
+                        <p>Ma poi ch'i' fui al piè d'un colle giunto, là dove terminava quella valle che m'avea di paura il cor compunto, guardai in alto, e vidi le sue spalle vestite già de' raggi del pianeta che mena dritto altrui per ogne calle.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">6</h1>
+                        <p>Allor fu la paura un poco queta che nel lago del cor m'era durata la notte ch'i' passai con tanta pieta.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">7</h1>
+                        <p>E come quei che con lena affannata uscito fuor del pelago a la riva si volge a l'acqua perigliosa e guata, così l'animo mio, ch'ancor fuggiva, si volse a retro a rimirar lo passo che non lasciò già mai persona viva.</p>
+                    </article>
+                </section>
+                <p id="js-button-block" class="t-center div-lines dark">
+                    <span><a class="button post-prepend" title="Adds content on the top">Prepend content</a>
+                        <a class="button post-append" title="Adds content on the bottom">Append content</a></span>
+                </p>
+                <p>Items are appended and prepended on the same container without conflicts. You can combine this API with your XHR functions to have a dynamic layout with live content.</p>
+            </section>
+     
+        <section class="test-grid clear" data-columns>
+                    <article class="item">
+                        <h1 class="">1</h1>
+                        <p>Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura ché la diritta via era smarrita.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">2</h1>
+                        <p>Ahi quanto a dir qual era è cosa dura esta selva selvaggia e aspra e forte che nel pensier rinova la paura!</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">3</h1>
+                        <p>Tant'è amara che poco è più morte; ma per trattar del ben ch'i' vi trovai, dirò de l'altre cose ch'i' v'ho scorte.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">4</h1>
+                        <p>Io non so ben ridir com'i' v'intrai, tant'era pien di sonno a quel punto che la verace via abbandonai.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">5</h1>
+                        <p>Ma poi ch'i' fui al piè d'un colle giunto, là dove terminava quella valle che m'avea di paura il cor compunto, guardai in alto, e vidi le sue spalle vestite già de' raggi del pianeta che mena dritto altrui per ogne calle.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">6</h1>
+                        <p>Allor fu la paura un poco queta che nel lago del cor m'era durata la notte ch'i' passai con tanta pieta.</p>
+                    </article>
+                    <article class="item">
+                        <h1 class="">7</h1>
+                        <p>E come quei che con lena affannata uscito fuor del pelago a la riva si volge a l'acqua perigliosa e guata, così l'animo mio, ch'ancor fuggiva, si volse a retro a rimirar lo passo che non lasciò già mai persona viva.</p>
+                    </article>
+                </section>
+        <!-- include 'data-columns' at the container -->
+        <div id="timeline" data-columns >  <div class="item" class="column size-1of4">                <img src="images/istvan-ilosvai-varga/flowerpots-on-the-windowsill-1931.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/august-macke/street-with-church-in-kandern.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/chang-dai-chien/unknown-title-3.jpg!HalfHD.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/street-winter-sunlight-and-snow.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/auguste-herbin/park-in-paris-1904.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/francisc-sirato/houses-on-the-shore-of-lake-cernica.jpg!HalfHD.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/gustav-klimt/death-and-life-1916.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/by-the-water-1881.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/young-girl-with-a-parasol-aline-nunès-1883.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/the-daughters-of-catulle-mendes-1888.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/corneliu-michailescu/still-life-with-grapes-and-carafe.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/paul-cezanne/self-portrait-1882.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/mary-fedden/the-teapot-1984.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/o-louis-guglielmi/town-square-1939.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/vincent-van-gogh/landscape-with-house-and-ploughman-1889(2).jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/vincent-van-gogh/sunflowers-1888.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/georges-seurat/the-circus-1891.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/maurice-prendergast/charles-street-boston.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/mary-cassatt/the-visit-1891.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/two-cowherds-by-the-river.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/qi-baishi/wisteria-flowers-and-meyhua-1951.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/ion-pacea/lalele.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pierre-auguste-renoir/portrait-of-victor-chocquet-1875.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/eug-ne-grasset/la-belle-jardiniere-march-1896.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/pablo-picasso/summer-landscape-1902.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/corneliu-michailescu/venice.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/camille-pissarro/flood-white-effect-eragny-1893.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/claude-monet/woodbearers-in-fontainebleau-forest.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/torii-kotondo/a-lady.jpg"></div>  <div class="item" class="column size-1of4">                <img src="images/wassily-kandinsky/couple-riding-1906.jpg!HalfHD.jpg"></div>
+            <div class="item" class="column size-1of3">
+                <img src="images/maurice-prendergast/afternoon-pincian-hill.jpg" alt="">
+            </div>
+           
+           
+        </div>
+        <div class="footer">
+          <a href="http://salvattore.com/" target="_blank">Website</a> |
+          <a href="http://twitter.com/salvattorejs" target="_blank">Twitter</a> |
+          Made by <a href="http://rolandomurillo.com/" target="_blank">Rolando Murillo</a>
+          and <a href="http://github.com/ppold" target="_blank">Giorgio Leveroni.</a>
+        </div>
+
+        <!-- The script must be included at the bottom of the body to work -->
+        <script src="js/salvattore.min.js"></script>
+        <script type="text/javascript">
+            var grid = document.querySelector('#timeline');
+            var item = document.createElement('article');
+                   
+             salvattore.appendElements(grid, [item]);
+            item.outerHTML = 'I’ve been appended!';
+        </script>
+    </body>
+</html>

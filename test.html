@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>hello</div>
+	<div class="grid">
+		<div class="article">
+			<div class="imagelist">images</div>
+		</div>
+	</div>
+	<script src="js/salvattore.js"></script>
+<script type="text/javascript">
+var grid = document.querySelector('#grid');
+var item = document.createElement('article');
+
+salvattore.appendElements(grid, [item]);
+item.outerHTML = 'I’ve been appended!';
+</script>
+</body>
+</html>

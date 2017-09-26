@@ -1,0 +1,44 @@
+<html> 
+    <head> 
+        <link rel="stylesheet" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" src="css/salvattore.css"
+        <title>Salvattore + Bootstrap</title> 
+    </head> 
+    <body> 
+     
+   <div id="grid" data-columns> 
+    <div class="panel panel-primary"> 
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body"> Panel content </div> 
+    </div> 
+     
+    <!-- repeat the panel as many times as you'd like -->
+     
+</div>
+    <script src="salvattore.js"></script> 
+    <script type="js/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript">
+     	function append(title, content) {
+    // build/select our elements
+    var grid = $('#columns')[0];
+    var item = document.createElement('div');
+    // build the html
+    var h = '<div class="panel panel-primary">';
+    h += '<div class="panel-heading">';
+    h += title;
+    h += '</div>';
+    h += '<div class="panel-body">';
+    h += content;
+    h += '</div>';
+    h += '</div>';
+    salvattore['append_elements'](grid, [item])
+    item.outerHTML = h;
+}
+$.getJSON("https://www.googleapis.com/books/v1/volumes?q=inauthor:Ernest+Hemingway&callback=?", function (data) {
+    $(data.items).each(function (i, book) {
+        append(book.volumeInfo.title, book.volumeInfo.description);
+    });
+});
+     </script>
+    </body> 
+</html>

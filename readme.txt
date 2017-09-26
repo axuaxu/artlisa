@@ -81,8 +81,17 @@ deploy.py              upload files to s3
                        params:[dir: dist, bucketname:artlisastage for zip:out]
 
 
+layout
+testjscroll.html
+
 //layout
+http://jscroll.com/
+http://www.developphp.com/video/JavaScript/Scroll-Load-Dynamic-Content-When-User-Reach-Bottom-Ajax
+https://connekthq.com/infinite-scroll-masonry/
+https://codepen.io/drawby/pen/Adjkt
 http://salvattore.com/
+http://savvior.org/
+https://connekthq.com/plugins/ajax-load-more/examples/salvattore-js/#code
 fluid                 bootstrap 
 css masonry
 http://w3bits.com/css-masonry/
