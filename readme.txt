@@ -82,8 +82,7 @@ img-html-load-sal.py  listing random pics  in img html with salvattore
                         param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template sv-?.html]
 
-img-html-load-nano.py  listing random pics  in img html with nano gallery
-                        bootstrap fluid layout
+img-html-load-nano-01.py  listing random pics  in img html with nano gallery
                         param:[input file: all-img-random.csv, output file:al-?.html
                                 template nano-?.html] 
 //aws
@@ -100,6 +99,9 @@ dir-painting.py        write painter's painting list
 list-img-random.py list random painting of a painter
                         params:[input all-painters.csv, csv-plist\painter-name.csv
                                 output: all-img-random.csv]
+img-html-load-nano-01.py load images to albums in nano gallery
+                          params:[input:all-img-random.csv, template: nano-01.html
+                                 output al-?.html]
 
 //layout
 z1.html               gamma gallery
