@@ -106,6 +106,9 @@ img-html-load-nano-03.py SEO page name, load images to albums in nano gallery
 img-html-load-nano-03.py id page name, load images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
+//lambda
+  handler name: filename.function name
+  advanced : 1 min
 
 //layout
 z1.html               gamma gallery
