@@ -23,8 +23,8 @@ for line in fo:
 
 pailist =""
 pl = list(set(painterarr))
-#pl = sorted(pl)
-random.shuffle(pl)
+pl = sorted(pl)
+#random.shuffle(pl)
 for pai in pl :
     pailist = pailist +pai+'\n'
 #print pailist

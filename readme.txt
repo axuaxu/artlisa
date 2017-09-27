@@ -93,7 +93,7 @@ deploy.py              upload files to s3
 
 img-tree-dup-02.py     check and delete duplicated images files 
                         params:[duplicate to del: all-del-images.csv]
-list_painter_csv.py    random shuffled list painters 
+list_painter_csv.py    sorted list painters 
                        params:[input:flist?.csv, ouput: all-painters.csv]
 dir-painting.py        write painter's painting list 
                         params:[input all-painters.csv, output csv-plist\painter-name.csv]
@@ -103,7 +103,11 @@ list-img-random.py list random painting of a painter
 img-html-load-nano-03.py SEO page name, load images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
-img-html-load-nano-03.py id page name, load images to albums in nano gallery
+img-html-load-nano-05.py id page name, load images to albums in nano gallery
+                          params:[input:all-img-random.csv, template: nano-01.html
+                                 output al-?.html]
+img-html-ran-nano-06.py id random painting from painter page name, l
+                           oad images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
 //lambda
