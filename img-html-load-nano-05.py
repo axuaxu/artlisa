@@ -8,13 +8,13 @@ import random
 
 #print('first check')
 #rootDir = '.\images'
-def getItem(painter):
+def getItem(painter,id):
     imgitem  = ''
     fi = ".\\csv-plist\\"+painter+".csv"
     fimg = open(fi,'r')
-    #i = albumid*100
+    i = id*100
     for item in fimg:
-      #i = i + 1
+      i = i + 1
       iarr = item.split('\\')
       iname = iarr[3].replace('\n','')
       #print item
@@ -28,8 +28,8 @@ def getItem(painter):
          desc = iname+'    '+painter
          desc = desc.replace('-',' ').title()
 
-         imgitem = imgitem+'<a href="'+item+'" data-ngid="'+iname+'" data-ngalbumid="'\
-                   +painter+'" data-ngthumb="'+item+'">'\
+         imgitem = imgitem+'<a href="'+item+'" data-ngid="'+str(i)+'" data-ngalbumid="'\
+                   +str(id)+'" data-ngthumb="'+item+'">'\
                    +desc+'</a>\n'
     
     return imgitem
@@ -65,11 +65,11 @@ def getInstr(inum,iend,parr):
               lstr = lstr.replace('\n','')
          #print imgsrc
               
-              imgstr = '\n<a href=""  data-ngkind="album" data-ngid="'+narr[2]+'" data-ngthumb="'\
+              imgstr = '\n<a href=""  data-ngkind="album" data-ngid="'+str(i)+'" data-ngthumb="'\
                  + lstr +'">'+painter+'</a>\n'
               #print imgstr
               instr = instr+imgstr
-              imgitem = getItem(narr[2])
+              imgitem = getItem(narr[2],i)
               instr = instr+imgitem
     return instr
 
@@ -114,7 +114,7 @@ random.shuffle(parr)
 #now =  datetime.datetime.now()
 #timestr = str(now).replace(' ','-').replace(':','-')
 #print now
-listf = "al-03.html"
+listf = "al-05.html"
 #print timestr[0:19]
 thtml = "nano-03.html"
 print thtml,listf
