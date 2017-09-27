@@ -1,3 +1,4 @@
+import random
 
 narr=[]
 fo = open('.\\csv\\all-images.csv','r')
@@ -22,7 +23,8 @@ for line in fo:
 
 pailist =""
 pl = list(set(painterarr))
-pl = sorted(pl)
+#pl = sorted(pl)
+random.shuffle(pl)
 for pai in pl :
     pailist = pailist +pai+'\n'
 #print pailist
