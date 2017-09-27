@@ -106,7 +106,7 @@ img-html-load-nano-03.py SEO page name, load images to albums in nano gallery
 img-html-load-nano-05.py id page name, load images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
-img-html-ran-nano-06.py id random painting from painter page name, l
+img-html-load-nano-06.py id random painting from painter page name, l
                            oad images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
