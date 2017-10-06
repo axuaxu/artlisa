@@ -138,6 +138,8 @@ fluid                 bootstrap
 http://w3bits.com/css-masonry/
 https://medium.com/@_jh3y/how-to-the-masonry-layout-56f0fe0b19df
 https://masonry.desandro.com/
+https://tympanus.net/Development/GridLoadingEffects/index5.html
+https://tympanus.net/codrops/2013/07/02/loading-effects-for-grid-items-with-css-animations/
 
 // web server
 python -m SimpleHTTPServer 2000
