@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>masonry</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<link rel="stylesheet" href="css/desandro.css">
+</head>
+<body>
+ <h1>Masonry - imagesLoaded progress</h1>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+   <img src="images/paul-cezanne/the-card-players-1892.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/eug-ne-grasset/la-belle-jardiniere-july-1896.jpg">
+  </div>
+  <div class="grid-item">
+    <img src="images/maurice-prendergast/new-england-harbour.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/konstantin-korovin/the-portrait-of-mariinsky-theatre-singer-vera-aleekseevna-dorofeeva-1920.jpg">
+  </div>
+  
+  <div class="grid-item">
+   <img src="images/paul-klee/highway-and-byways-1929(1).jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/maurice-prendergast/afternoon-pincian-hill.jpg" alt="">
+  </div>
+  <div class="grid-item">
+    <img src="images/bada-shanren/mynah-bird-on-an-old-tree-1703.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/henri-matisse/zorah-standing-1912.jpg">
+  </div>
+  <div class="grid-item">
+    <img src="images/pierre-auguste-renoir/tree-blooming.jpg">
+  </div>
+  <div class="grid-item">
+    <img src="images/maurice-prendergast/ladies-in-the-rain.jpg">
+  </div>
+  <div class="grid-item">
+     <img src="images/maurice-prendergast/afternoon-pincian-hill.jpg" alt="">
+  </div>
+  <div class="grid-item">
+    <img src="images/ion-pacea/still-life-with-flowers-and-apples.jpg">
+  </div>
+  <div class="grid-item">
+     <img src="images/eug-ne-grasset/la-belle-jardiniere-july-1896.jpg">
+  </div>
+</div>
+<script type="text/javascript">
+	
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
+
+</script>
+</body>
+</html>

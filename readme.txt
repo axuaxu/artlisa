@@ -72,7 +72,7 @@ img-html-random-01.py   listing random pics
 img-html-load.py       listing random pics  in img html with infinite load
                        param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template gg-?.html]
-img-html-load-fluid.py  isting random pics  in img html with infinite load
+img-html-load-fluid.py  listing random pics  in img html with infinite load
                         bootstrap fluid layout
                         param:[input file: allimages?.csv, output file:img-html-gg-?.html
                                 template b-?.html]
@@ -133,9 +133,12 @@ http://salvattore.com/
 http://savvior.org/
 https://connekthq.com/plugins/ajax-load-more/examples/salvattore-js/#code
 fluid                 bootstrap 
-css masonry
+
+//css masonry
 http://w3bits.com/css-masonry/
 https://medium.com/@_jh3y/how-to-the-masonry-layout-56f0fe0b19df
+https://masonry.desandro.com/
+
 // web server
 python -m SimpleHTTPServer 2000
 

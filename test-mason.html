@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>masonry</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<link rel="stylesheet" href="css/desandro.css">
+</head>
+<body>
+  <div class="grid">
+  <!-- width of .grid-sizer used for columnWidth -->
+  <div class="grid-sizer"></div>
+  <div class="grid-item"> <img src="images/armand-guillaumin/la-place-valhubert-1875.jpg"></div>
+   <div class="grid-item"><img src="images/pierre-auguste-renoir/jeanne-samary-in-a-low-necked-dress-1877.jpg"></div>
+   <div class="grid-item"><img src="images/henri-matisse/zorah-standing-1912.jpg"></div> 
+   <div class="grid-item"><img src="images/eug-ne-grasset/la-belle-jardiniere-july-1896.jpg"></div>
+   <div class="grid-item"><img src="images/paul-klee/highway-and-byways-1929(1).jpg"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+   <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2"></div>
+  ...
+</div>
+</div>
+<script type="text/javascript">
+	var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    // options...
+     itemSelector: '.grid-item',
+  // use element for option
+     columnWidth: '.grid-sizer',
+     percentPosition: true
+  });
+});
+</script>
+</body>
+</html>

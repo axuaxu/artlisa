@@ -106,8 +106,8 @@ now =  datetime.datetime.now()
 timestr = str(now).replace(' ','-').replace(':','-')
 #print now
 print timestr[0:16]
-listf = ".\index-00"+'.html'
-thtml = "gg-01.html"
+listf = ".\index-02"+'.html'
+thtml = "gg-35.html"
 ranfile(parr,listf,thtml)
 
 

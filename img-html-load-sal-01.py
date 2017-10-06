@@ -102,7 +102,7 @@ random.shuffle(parr)
 now =  datetime.datetime.now()
 timestr = str(now).replace(' ','-').replace(':','-')
 #print now
-listf = "sa1.html"
+listf = "ta1.html"
 print timestr[0:19]
 thtml = "sv3.html"
 print thtml,listf
