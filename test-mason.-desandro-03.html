@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>masonry</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<link rel="stylesheet" href="css/desandro.css">
+</head>
+<body>
+ <h1>Masonry - imagesLoaded progress</h1>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+     <img src="images/istvan-ilosvai-varga/flowerpots-on-the-windowsill-1931.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/august-macke/street-with-church-in-kandern.jpg">
+  </div>
+  <div class="grid-item">
+  <img src="images/chang-dai-chien/unknown-title-3.jpg!HalfHD.jpg">
+  </div>
+  <div class="grid-item">
+  <img src="images/camille-pissarro/street-winter-sunlight-and-snow.jpg">
+  </div>
+
+  <div class="grid-item">
+   <img src="images/auguste-herbin/park-in-paris-1904.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/francisc-sirato/houses-on-the-shore-of-lake-cernica.jpg!HalfHD.jpg">
+  </div>
+  <div class="grid-item">
+     <img src="images/camille-pissarro/by-the-water-1881.jpg">
+  </div>
+  <div class="grid-item">
+  <img src="images/pierre-auguste-renoir/young-girl-with-a-parasol-aline-nunès-1883.jpg">
+  </div>
+  <div class="grid-item">
+     <img src="images/pierre-auguste-renoir/the-daughters-of-catulle-mendes-1888.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/corneliu-michailescu/still-life-with-grapes-and-carafe.jpg">
+  </div>
+  <div class="grid-item">
+       <img src="images/paul-cezanne/self-portrait-1882.jpg">
+  </div>
+  <div class="grid-item">
+   <img src="images/mary-fedden/the-teapot-1984.jpg">
+  </div>
+  <div class="grid-item">
+      <img src="images/o-louis-guglielmi/town-square-1939.jpg">
+  </div>
+</div>
+<script type="text/javascript">
+	
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
+
+</script>
+</body>
+</html>

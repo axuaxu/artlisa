@@ -110,6 +110,10 @@ img-html-load-nano-06.py id random painting from painter page name, l
                            oad images to albums in nano gallery
                           params:[input:all-img-random.csv, template: nano-01.html
                                  output al-?.html]
+
+test-mnry-scrl-1.html  https://infinite-scroll.com/demo/masonry/
+test-mnry-scrl-1...-6.html     view source, copy paste html, serial pages
+
 //lambda
   handler name: filename.function name
   advanced : 1 min
@@ -140,6 +144,8 @@ https://medium.com/@_jh3y/how-to-the-masonry-layout-56f0fe0b19df
 https://masonry.desandro.com/
 https://tympanus.net/Development/GridLoadingEffects/index5.html
 https://tympanus.net/codrops/2013/07/02/loading-effects-for-grid-items-with-css-animations/
+
+https://css-tricks.com/snippets/css/using-font-face/
 
 // web server
 python -m SimpleHTTPServer 2000
